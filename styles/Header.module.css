@@ -1,0 +1,145 @@
+.header {
+  background-color: transparent;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__open {
+  margin-right: 4px;
+  width: 50px;
+  opacity: 0.2;
+
+}
+
+#header__search {
+  display: flex;
+}
+
+.header__closed {
+  margin-right: 10px;
+  width: 50px;
+  opacity: 0.5;
+
+}
+
+@media screen and (min-width: 1385px) {
+  .header__open {
+    display: none;
+  }
+
+  .header__closed {
+    display: none;
+  }
+
+  .header__column-buttons {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 491px) {
+
+
+  .header__responsive-settings {
+    order: 1;
+  }
+
+  .header {
+    height: 10rem;
+    align-items: center;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    /* order: 1; */
+  }
+}
+
+
+.header__column-buttons {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+.header__dropdown-buttons {
+  margin-top: 3.5px;
+}
+
+
+
+.header__dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 160px;
+  margin: 0.2rem;
+  background-color: #f7dadb;
+}
+
+
+.header__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.header__dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: none;
+  min-width: 160px;
+  outline: none;
+}
+
+.header__dropdown-content {
+  height: 90px;
+}
+
+.header__active-filter {
+  background-color: #ddd;
+}
+
+.header__label {
+  margin-left: 5px;
+  opacity: 0.2;
+}
+
+#header__input {
+  margin: 0.5rem;
+  outline: none;
+  height: 2.5rem;
+}
+
+@media screen and (max-width: 515px) {}
+
+
+
+
+.header__dropdown-content button:active {
+  background-color: #f1f1f1;
+  ;
+}
+
+.header__dropdown:hover .header__dropdown-content {
+  display: block;
+}
+
+.header__dropdown:hover .header__dropbtn {
+  background-color: #f7dadb;
+  ;
+}
