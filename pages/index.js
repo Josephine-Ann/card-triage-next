@@ -12,6 +12,9 @@ export default function Home() {
   } = usePatients()
   return (
     <div className='background min-h-[100vh]'>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
       <Header />
       {
         items.patientList.length === 0 ? (
