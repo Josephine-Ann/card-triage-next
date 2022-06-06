@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <div className='background min-h-[100vh]'>
       <Head>
+        <title>Card Triage</title>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <Header />
